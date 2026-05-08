@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shekynah Mae S. Somogoy - Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.ico.png">
+    
+    <!-- External Scripts & Fonts -->
+    <!-- Bulma is loaded before Tailwind and style.css so the existing design and animations stay in control. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-full">
+    <div class="app-wrapper w-full" id="app-wrapper">
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 w-full z-50 bg-opacity-90 backdrop-blur-md animate-fade-in" style="background: #aaa ">
+            <div class="container max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#hero" class="font-display font-bold text-xl logo-glow" style="color: #bb7c06;">SMS</a>
+                <div class="hidden md:flex gap-8">
+                    <a href="#about" class="nav-link text-sm font-medium" style="color: #1a1a1a;">About</a> 
+                    <a href="#education" class="nav-link text-sm font-medium" style="color: #1a1a1a;">Education</a> 
+                    <a href="#training" class="nav-link text-sm font-medium" style="color: #1a1a1a;">Training</a> 
+                    <a href="#contact" class="nav-link text-sm font-medium" style="color: #1a1a1a;">Contact</a>
+                </div>
+                <button id="menu-btn" class="md:hidden" aria-label="Menu"> 
+                    <i data-lucide="menu" style="color: #493e00;"></i> 
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+                <div class="flex flex-col gap-3">
+                    <a href="#about" class="text-sm font-medium py-2" style="color: #1a1a1a;">About</a> 
+                    <a href="#education" class="text-sm font-medium py-2" style="color: #1a1a1a;">Education</a> 
+                    <a href="#training" class="text-sm font-medium py-2" style="color: #1a1a1a;">Training</a> 
+                    <a href="#contact" class="text-sm font-medium py-2" style="color: #1a1a1a;">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" class="section-beige relative min-h-full flex items-center overflow-hidden">
+            <div class="floating-heart floating-heart-1">
+                <i data-lucide="heart" style="width:38px; height:38px;"></i>
+            </div>
+            <div class="floating-heart floating-heart-2">
+                <i data-lucide="heart" style="width:30px; height:30px;"></i>
+            </div>
+            <div class="floating-heart floating-heart-3">
+                <i data-lucide="heart" style="width:36px; height:36px;"></i>
+            </div>
+            <div class="floating-heart floating-heart-4">F
+                <i data-lucide="heart" style="width:28px; height:28px;"></i>
+            </div>
+            <div class="floating-heart floating-heart-5">
+                <i data-lucide="heart" style="width:30px; height:30px;"></i>
+            </div>
+            <div class="floating-heart floating-heart-6">
+                <i data-lucide="heart" style="width:34px; height:34px;"></i>
+            </div>
+            <div class="geo-circle animate-float" style="top: -100px; right: -100px; opacity: 0.5;"></div>
+            <div class="geo-circle" style="bottom: -150px; left: -150px; width: 400px; height: 400px; opacity: 0.3;"></div>
+            <div class="geo-dot animate-float delay-2" style="top: 20%; right: 15%;"></div>
+            <div class="geo-dot animate-float delay-4" style="bottom: 30%; left: 10%;"></div>
+            <div class="geo-dot animate-float delay-6" style="top: 40%; left: 25%;"></div>
+            <div class="max-w-6xl mx-auto px-6 py-32 relative z-10">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="subtitle animate-fade-up delay-1 text-sm font-medium tracking-widest uppercase mb-4" style="color: #555;">HELLO, IT'S ME</p>
+                        <h1 id="hero-title" class="title animate-fade-up delay-2 font-display font-900 text-5xl md:text-7xl leading-tight line-draw" style="color: #493e00;">Shekynah Mae<br>Serillo Somogoy</h1>
+                        <p id="hero-subtitle" class="subtitle animate-fade-up delay-4 text-lg mt-8 font-light" style="color: #444;">Aspiring Computer Engineer focus on exploring technology and shaping future innovations.</p>
+                        <div class="animate-fade-up delay-5 flex gap-4 mt-8">
+                            <a href="#contact" class="button is-rounded inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded-full transition-all duration-300 hover:scale-105" style="background: #1a1a1a; color: #f5f0e8;"> <i data-lucide="mail" style="width:16px; height:16px;"></i> Contact Me </a> 
+                            <a href="#about" class="button is-rounded inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded-full border-2 transition-all duration-300 hover:scale-105" style="border-color: #1a1a1a; color: #1a1a1a;"> Explore <i data-lucide="arrow-down" style="width:16px; height:16px;"></i> </a>
+                        </div>
+                    </div>
+                    <div class="animate-scale-in delay-3 flex justify-center">
+                        <div class="relative">
+                            <div class="w-64 h-80 md:w-72 md:h-96 rounded-2xl flex items-center justify-center" style="background: #1a1a1a;">
+                                <div class="text-center">
+                                    <div class="image is-96x96 w-24 h-24 mx-auto rounded-full overflow-hidden mb-4" style="background: #f5f0e8;">
+                                        <img src="somogoy.jpeg" alt="Shekynah Mae" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="font-display text-xl font-bold" style="color: #f5f0e8;">SMS</p>
+                                    <p class="text-sm mt-1" style="color: #aaa;">BS Computer Engineering</p>
+                                </div>
+                            </div>
+                            <div class="absolute -bottom-4 -right-4 w-full h-full rounded-2xl -z-10" style="border: 2px solid #1a1a1a;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-cream py-24 relative">
+            <div class="floating-heart section-heart-about-1">
+                <i data-lucide="heart" style="width:30px; height:30px;"></i>
+            </div>
+            <div class="floating-heart section-heart-about-2">
+                <i data-lucide="heart" style="width:26px; height:26px;"></i>
+            </div>
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="reveal">
+                    <p class="text-sm font-medium tracking-widest uppercase mb-2" style="color: #888;">Get to Know Me</p>
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-12" style="color: #1a1a1a;">Personal Details</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="reveal card-hover p-6 rounded-xl" style="background: #f5f0e8;">
+                        <div class="flex items-center gap-3 mb-3"><i data-lucide="calendar" style="width:20px; height:20px; color: #1a1a1a;"></i> <span class="text-sm font-medium" style="color: #888;">Date of Birth</span></div>
+                        <p class="font-medium text-lg" style="color: #1a1a1a;">April 16, 2005</p>
+                    </div>
+                    <div class="reveal card-hover p-6 rounded-xl" style="background: #f5f0e8;">
+                        <div class="flex items-center gap-3 mb-3"><i data-lucide="globe" style="width:20px; height:20px; color: #1a1a1a;"></i> <span class="text-sm font-medium" style="color: #888;">Nationality</span></div>
+                        <p class="font-medium text-lg" style="color: #1a1a1a;">Filipino</p>
+                    </div>
+                    <div class="reveal card-hover p-6 rounded-xl" style="background: #f5f0e8;">
+                        <div class="flex items-center gap-3 mb-3"><i data-lucide="heart" style="width:20px; height:20px; color: #1a1a1a;"></i> <span class="text-sm font-medium" style="color: #888;">Religion</span></div>
+                        <p class="font-medium text-lg" style="color: #1a1a1a;">Roman Catholic</p>
+                    </div>
+                    <div class="reveal card-hover p-6 rounded-xl" style="background: #f5f0e8;">
+                        <div class="flex items-center gap-3 mb-3"><i data-lucide="map-pin" style="width:20px; height:20px; color: #1a1a1a;"></i> <span class="text-sm font-medium" style="color: #888;">Address</span></div>
+                        <p class="font-medium text-lg" style="color: #1a1a1a;">Brgy. Bacan, Cabatuan, Iloilo</p>
+                    </div>
+                    <div class="reveal card-hover p-6 rounded-xl" style="background: #f5f0e8;">
+                        <div class="flex items-center gap-3 mb-3"><i data-lucide="user" style="width:20px; height:20px; color: #1a1a1a;"></i> <span class="text-sm font-medium" style="color: #888;">Status</span></div>
+                        <p class="font-medium text-lg" style="color: #1a1a1a;">Single</p>
+                    </div>
+                    <div class="reveal card-hover p-6 rounded-xl" style="background: #f5f0e8;">
+                        <div class="flex items-center gap-3 mb-3"><i data-lucide="map-pin" style="width:20px; height:20px; color: #1a1a1a;"></i> <span class="text-sm font-medium" style="color: #888;">Gender</span></div>
+                        <p class="font-medium text-lg" style="color: #1a1a1a;">Female</p>
+                    </div>
+                    <div class="reveal card-hover p-6 rounded-xl" style="background: #f5f0e8;">
+                        <div class="flex items-center gap-3 mb-3"><i data-lucide="map-pin" style="width:20px; height:20px; color: #1a1a1a;"></i> <span class="text-sm font-medium" style="color: #888;">Height & Weight</span></div>
+                        <p class="font-medium text-lg" style="color: #1a1a1a;">157 cm & 61 kg</p>
+                    </div>
+                    <div class="reveal card-hover p-6 rounded-xl" style="background: #f5f0e8;">
+                        <div class="flex items-center gap-3 mb-3"><i data-lucide="message-circle" style="width:20px; height:20px; color: #1a1a1a;"></i> <span class="text-sm font-medium" style="color: #888;">Languages</span></div>
+                        <p class="font-medium text-lg" style="color: #1a1a1a;">English, Filipino, Hiligaynon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section-beige py-24 relative">
+            <div class="floating-heart section-heart-education-1">
+                <i data-lucide="heart" style="width:32px; height:32px;"></i>
+            </div>
+            <div class="floating-heart section-heart-education-2">
+                <i data-lucide="heart" style="width:28px; height:28px;"></i>
+            </div>
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="reveal">
+                    <p class="text-sm font-medium tracking-widest uppercase mb-2" style="color: #888;">Academic Background</p>
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-12" style="color: #1a1a1a;">Education</h2>
+                </div>
+                <div class="reveal card-hover p-8 md:p-12 rounded-2xl relative overflow-hidden" style="background: #1a1a1a;">
+                    <div class="geo-circle" style="top: -80px; right: -80px; width: 200px; height: 200px; border-color: rgba(245,240,232,0.1);"></div>
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0" style="background: #f5f0e8;"><i data-lucide="graduation-cap" style="width:28px; height:28px; color: #1a1a1a;"></i></div>
+                        <div>
+                            <h3 class="font-display font-bold text-2xl md:text-3xl" style="color: #f5f0e8;">Western Institute of Technology</h3>
+                            <p class="text-lg mt-2" style="color: #ccc;">Bachelor of Science in Computer Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Section -->
+        <section id="training" class="section-cream py-24 relative">
+            <div class="floating-heart section-heart-training-1">
+                <i data-lucide="heart" style="width:30px; height:30px;"></i>
+            </div>
+            <div class="floating-heart section-heart-training-2">
+                <i data-lucide="heart" style="width:24px; height:24px;"></i>
+            </div>
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="reveal">
+                    <p class="text-sm font-medium tracking-widest uppercase mb-2" style="color: #888;">Learning & Development</p>
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-12" style="color: #1a1a1a;">Technical Training & Competitions</h2>
+                </div>
+                <div class="space-y-8">
+                    <div class="reveal card-hover p-8 rounded-2xl" style="background: #f5f0e8;">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: #1a1a1a;"><i data-lucide="code" style="width:20px; height:20px; color: #f5f0e8;"></i></div>
+                            <div>
+                                <h3 class="font-display font-bold text-xl mb-3" style="color: #1a1a1a;">DICT Python Essential Course</h3>
+                                <div class="flex flex-wrap gap-2"><span class="tag-pill">Python Scripting</span> <span class="tag-pill">Automation</span> <span class="tag-pill">Data Structures</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal card-hover p-8 rounded-2xl" style="background: #f5f0e8;">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: #1a1a1a;"><i data-lucide="cpu" style="width:20px; height:20px; color: #f5f0e8;"></i></div>
+                            <div>
+                                <h3 class="font-display font-bold text-xl mb-3" style="color: #1a1a1a;">Akuni Projects Technical Workshops</h3>
+                                <div class="flex flex-wrap gap-2"><span class="tag-pill">Computer Literacy & Productivity</span> <span class="tag-pill">Embedded Systems for Beginners</span> <span class="tag-pill">Research & Analytics</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal card-hover p-8 rounded-2xl" style="background: #f5f0e8;">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: #1a1a1a;"><i data-lucide="radio" style="width:20px; height:20px; color: #f5f0e8;"></i></div>
+                            <div>
+                                <h3 class="font-display font-bold text-xl mb-3" style="color: #1a1a1a;">ICpEP Webinar Series</h3>
+                                <div class="flex flex-wrap gap-2"><span class="tag-pill">IoT Applications</span> <span class="tag-pill">Digital Economy</span> <span class="tag-pill">Empowering Future</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal card-hover p-8 rounded-2xl" style="background: #f5f0e8;">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: #1a1a1a;"><i data-lucide="shield" style="width:20px; height:20px; color: #f5f0e8;"></i></div>
+                            <div>
+                                <h3 class="font-display font-bold text-xl mb-3" style="color: #1a1a1a;">Cisco Networking Academy – DICT-ITU DTC</h3>
+                                <div class="flex flex-wrap gap-2"><span class="tag-pill">Network Defense</span> <span class="tag-pill">Security Alerts</span> <span class="tag-pill">Firewall & Cloud Security</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-dark py-24 relative">
+            <div class="floating-heart section-heart-contact-1">
+                <i data-lucide="heart" style="width:32px; height:32px;"></i>
+            </div>
+            <div class="floating-heart section-heart-contact-2">
+                <i data-lucide="heart" style="width:26px; height:26px;"></i>
+            </div>
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="reveal">
+                    <p class="text-sm font-medium tracking-widest uppercase mb-2" style="color: #888;">Let's Connect</p>
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-12" style="color: rgba(245, 183, 84, 0.92);">Get In Touch</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div class="reveal flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: rgba(245,240,232,0.1);"><i data-lucide="phone" style="width:20px; height:20px; color: #f5f0e8;"></i></div>
+                            <div>
+                                <p class="text-sm" style="color: #888;">Phone</p>
+                                <p class="font-medium text-lg" style="color: rgba(245, 183, 84, 0.92);">09916570640</p>
+                            </div>
+                        </div>
+                        <div class="reveal flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: rgba(245,240,232,0.1);"><i data-lucide="mail" style="width:20px; height:20px; color: #f5f0e8;"></i></div>
+                            <div>
+                                <p class="text-sm" style="color: #888;">Email</p>
+                                <p class="font-medium text-lg" style="color: rgba(245, 183, 84, 0.92);">kynahs16@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="reveal flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: rgba(245,240,232,0.1);"><i data-lucide="map-pin" style="width:20px; height:20px; color: #f5f0e8;"></i></div>
+                            <div>
+                                <p class="text-sm" style="color: #888;">Location</p>
+                                <p class="font-medium text-lg" style="color: rgba(245, 183, 84, 0.92);">Brgy. Bacan, Cabatuan, Iloilo, Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal card-hover p-8 rounded-2xl" style="background: rgba(245,240,232,0.05); border: 1px solid rgba(245,240,232,0.15);">
+                        <p class="text-sm font-medium tracking-widest uppercase mb-4" style="color: #888;">Reference</p>
+                        <h3 class="font-display font-bold text-xl mb-1" style="color: rgba(245, 183, 84, 0.92);">Mark Glen Guides</h3>
+                        <p style="color: #ccc;">Head of Computer Engineering</p>
+                        <p class="text-sm mt-1" style="color: #888;">Western Institute of Technology</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 text-center" style="background: #111; color: #888;">
+            <p class="text-sm">© 2026 Shekynah Mae S. Somogoy. All rights reserved.</p>
+        </footer>
+    </div>
+
+    
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
