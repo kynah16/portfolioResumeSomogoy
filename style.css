@@ -360,3 +360,34 @@ html { scroll-behavior: smooth; }
     bottom: -0.75rem;
   }
 }
+
+/* Mobile foreground layering: keep the existing design and animations, but place the name and profile above decorative motion. */
+@media (max-width: 767px) {
+  #hero > .floating-heart,
+  #hero > .geo-circle,
+  #hero > .geo-dot {
+    z-index: 1;
+  }
+
+  #hero .max-w-6xl {
+    z-index: 10;
+  }
+
+  #hero .grid > div:first-child,
+  #hero .animate-scale-in {
+    position: relative;
+    z-index: 20;
+  }
+
+  #hero-title,
+  #hero-subtitle {
+    position: relative;
+    z-index: 21;
+  }
+
+  #hero .animate-scale-in > .relative {
+    position: relative;
+    z-index: 22;
+  }
+}
+
