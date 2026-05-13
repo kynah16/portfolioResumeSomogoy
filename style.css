@@ -299,3 +299,64 @@ html { scroll-behavior: smooth; }
 .app-wrapper .image img {
   object-fit: cover;
 }
+/* Mobile hero alignment: keeps the existing animations while preventing the name and profile card from crowding each other. */
+@media (max-width: 767px) {
+  #hero {
+    min-height: auto;
+    padding-top: 5rem;
+  }
+
+  #hero .grid {
+    gap: 2.5rem;
+  }
+
+  #hero .grid > div:first-child {
+    text-align: center;
+  }
+
+  #hero-title {
+    font-size: clamp(2.75rem, 13vw, 4.25rem);
+    line-height: 1.05;
+  }
+
+  #hero-subtitle {
+    max-width: 24rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hero .line-draw::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hero .animate-fade-up.delay-5 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #hero .animate-scale-in {
+    width: 100%;
+  }
+
+  #hero .animate-scale-in > .relative {
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+  }
+
+  #hero .animate-scale-in .w-64.h-80 {
+    width: min(18rem, 82vw) !important;
+    height: min(23rem, 104vw) !important;
+  }
+
+  #hero .animate-scale-in .image.is-96x96 {
+    width: 7rem !important;
+    height: 7rem !important;
+  }
+
+  #hero .animate-scale-in .absolute.-bottom-4.-right-4 {
+    right: -0.75rem;
+    bottom: -0.75rem;
+  }
+}
